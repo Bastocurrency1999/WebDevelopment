@@ -1,0 +1,111 @@
+=== Project Name : <Learn Web/>
+=== Technology used  == Html, Css and Javascript
+
+
+Path
+asset folder - Css folder
+             - js folder
+             - img folder
+
+Content
+Css folder - custom stylesheet is located here...
+js folder - custom javascript file is located here...
+img folder - it houses all image on the site
+
+====================================================================================
+================  ⚠⚠⚠  NOTE!!! ⚠⚠⚠⚠ ============================================
+
+==> You are not permitted to alter any existing codes [css and js file]
+==> Read and follow the guideline carefully
+
+
+
+===== GUIDELINES TO FOLLOW ========
+==> You are to build your custom profile card at the student-profile-card-section
+
+==> create your profile card inside this section
+----------------------------------------------------------------------------------
+    <div class="student-profile-card">
+
+    </div>
+----------------------------------------------------------------------------------
+
+==> your profile card must follow this procedures  (nb: you can copy and paste if you want)
+
+---> Create a profile-card div with another class of your firstname
+----------------------------------------------------------------------------------
+    <div class="profile-card your-first-name">
+    ...
+    </div>
+
+... You can give it another background of your choice in the css file:
+---------------------------------------------
+.your-first-name{
+    background-color: purple !important;
+}
+---------------------------------------------
+----------------------------------------------------------------------------------
+
+---> create an img element with your image in the src attribute add another class of 'my-image-your-first-name'
+----------------------------------------------------------------------------------
+<img src="./asset/img/your image name.extention of the image(jpg,png...)" alt="" class="image-top my-image-your-first-name">
+(nb: do not erase the image-top class)
+
+... You can style your image any design that you like and it must be on hover:
+----------------------------------------------------------------
+.my-image-your-first-name:hover{
+    opacity:0.2; - you can add any styling that you like here
+}
+----------------------------------------------------------------
+----------------------------------------------------------------------------------
+
+--> create a span with a class of 's-name' add another class of 's-your-first-name'
+----------------------------------------------------------------------------------     
+    <span class="s-name s-your-first-name">
+        Surname Name .O  (and middle name as initials)
+    </span>     
+(nb: you will later reference this class in the js file) 
+---------------------------------------------------------------------------------- 
+
+--> create another span with a class of 's-stack'
+---------------------------------------------------------------------------------- 
+    <span class="s-stack">
+        Frontend  - your stack in between (either frontend or backend)
+    </span>
+---------------------------------------------------------------------------------- 
+
+--> create a button with a class of 'profile-btn'
+---------------------------------------------------------------------------------- 
+    <button class="profile-btn">My profile</button>
+---------------------------------------------------------------------------------- 
+
+
+---> And finally your profile-card must look like this look like this
+----------------------------------------------------------------------------------             
+    <div class="profile-card">
+        <img src="./asset/img/log.jpg" alt="" class="image-top">
+             <span class="s-name">
+                    Template Name .O
+            </span>
+            <span class="s-stack">
+                    Frontend
+            </span>
+    <button class="profile-btn">My profile</button>
+    </div>
+---------------------------------------------------------------------------------- 
+
+
+--> Create a new function in the javascript file
+
+==> 1. create a var name of Your First Name
+----------------------------------------------------------------------
+var YourFirstName = document.querySelector('.s-your-first-name')
+----------------------------------------------------------------------
+
+==> 2. create a function to alert your name
+----------------------------------------------------------------------
+function alertYourFirstName()
+{
+    alert(YourFirstName.innerHTML);
+}
+---------------------------------------------------------------------
