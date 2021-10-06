@@ -142,7 +142,7 @@ button.sign-up-btn{
     opacity:.26;
 }
 
-.modal-overlay{
+/* .modal-overlay{
     width:100%;
     min-height:100vh;
     background-color:rgba(255,255,255,.7);
@@ -172,7 +172,7 @@ button.sign-up-btn{
 
 .modal-overlay form input[type=submit]{
     cursor:pointer;
-}
+} */
 
 /* styling for student section */
 #student{
